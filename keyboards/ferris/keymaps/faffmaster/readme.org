@@ -1,0 +1,44 @@
+* Faffmaster Ferris Keyboard Layout
+
+A QWERTY layout with numpad-like numbers, vi-like navigation.
+
+As per Ferris README, build with:
+#+begin_src shell
+make ferris/sweep:faffmaster:avrdude-split-right
+make ferris/sweep:faffmaster:avrdude-split-left
+#+end_src
+
+** Handy Reference:
+
+#+begin_src
+  Q   W   E   R₂  T             Y  ₅U   I   O   P
+  A   S   D   F   G₁           ₄H   J   K   L   ;
+  Z₇  X   C   V₃  B             N  ₆M   ,   . ₇ /
+                TAB BS   ·   SP RET
+
+Layers 1-6 opposite side to mod key
+Home Row Modifiers: Super, Alt, Ctrl, Shift (mirrored right)
+CapsLock on a `QP` combo
+
+5. function                               2. mouse.  Adj on R, E
+   PrtSc f7 f8 f9 f10                              ·  Bk Fw ·  ·
+   ·     f4 f5 f6 f11                        (mv)  l  d  u  r  ·
+   ·     f1 f2 f3 f12                        (scr) l  d  u  r  ·
+                     Esc                  3      2 1
+
+4. numbers (& symbols)                    1. movement
+   [ 7 8 9 ]                                 top: undo cut copy paste redo
+   : 4 5 6 .                                 mid: movement, Ins
+   - 1 2 3 =                                 bot: movement++, Del
+           0 .
+
+6. media                                  3. symbols
+   · mt v- v+ ·                              ` { } | &
+   · rw pp ff ·                              ' ( ) ~ \
+   · ·  st ·  ·                              " [ ] _ ·
+
+7. Special, on Z&/
+   rst slp - - -    - - - slp rst
+#+end_src
+
+* TODO Refine symbols, promote from numbers
